@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application to enter MALICIOUS_Kali Group</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 400px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: left;
+            width: 100%;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1>SO YOU WANT TO ENTER MALICIOUS_KALI GROUP HUH..</h1>
+    <h2>Before we get started, fill in the required information.</h2>
+    <img src="hyper.jpg" alt="MALICIOUS_KALI" width="360px" height="240px">
+
+    <form action="https://formsubmit.co/hyp3r.ph4nt0m@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="submitted.html">
+        <input type="hidden" name="_captcha" value="false">  <!-- Disable FormSubmit.co Captcha -->
+        <div class="form-group">
+            <label for="username">USERNAME:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username here" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile_number">CONTACT:</label>
+            <input type="tel" id="mobile_number" name="mobile_number" placeholder="Enter your mobile number here.." pattern="[0-9]{10}" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-Mail: </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email here.." required>
+        </div>
+        <div class="form-group">
+            <label for="first_sem_marks">1ST SEMESTER MARKS: </label>
+            <input type="number" id="first_sem_marks" name="first_sem_marks" placeholder="Enter your 1st sem marks here..">
+        </div>
+        <div class="form-group">
+            <label for="branch">BRANCH: </label>
+            <input type="text" id="branch" name="branch" placeholder="Enter your branch here..">
+        </div>
+        <div>
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">
+                I agree to the <a href="#" onclick="showTerms()">Terms and Conditions</a>.
+            </label>
+        </div>
+        
+        <button type="submit" id="submit-btn" disabled>Submit</button>
+    </form>
+
+    <script>
+        // Function to show Terms and Conditions
+        function showTerms() {
+            alert("Terms and Conditions:\n\n" +
+                  "1. Use of Formal Language – Members must communicate professionally and respectfully at all times.\n" +
+                  "2. Prohibition of Inappropriate Language – The use of offensive, vulgar, or disrespectful language is strictly prohibited.\n" +
+                  "3. Work-Focused Discussions – This group is intended solely for work-related discussions. Casual or off-topic conversations should be kept to a minimum.\n" +
+                  "4. Respectful Requests – When seeking assistance, members should articulate their needs clearly and courteously.\n" +
+                  "5. Mutual Support – Members are encouraged to actively help others and contribute to a collaborative learning environment.");
+        }
+
+        // Enable submit button only when terms are accepted
+        document.getElementById("agree").addEventListener("change", function() {
+            document.getElementById("submit-btn").disabled = !this.checked;
+        });
+    </script>
+</body>
+</html>
